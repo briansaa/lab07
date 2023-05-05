@@ -38,24 +38,26 @@ desconectar($conexion);
                     </tr>
                 </thead>
                 <tbody>
-                <?php while($curso = mysqli_fetch_array($resultado)) {
+                <?php while
+                
+                
+                ($curso = mysqli_fetch_array($resultado)) {
                         $curso_id = $curso['curso_id'];
                         $nombre_curso = $curso['nombre_curso'];
                         $creditos = $curso['creditos'];
-                    ?>
-                    <tr>
-                        <td><?php echo $curso_id; ?></td>
-                        <td><?php echo $nombre_curso; ?></td>
-                        <td><?php echo $creditos; ?></td>
-                        <td>
-                            <a href="editar_curso.php?id=<?php echo $curso_id; ?>" class="btn btn-primary">Editar</a>
-                            <a href="eliminar_curso.php?id=<?php echo $curso_id; ?>" class="btn btn-danger">Eliminar</a>
-                        </td>
-                    </tr>
-                <?php } ?>
+
+
+
+                        echo '<tr>';
+                        echo '<td>' . $curso_id . '</td>';
+                        echo '<td>' . $nombre_curso . '</td>';
+                        echo '<td>' . $creditos . '</td>';
+                        echo '<td><a href="editar_curso.php?id='. $curso_id .'"><button type="button" class="btn btn-primary">Editar</button></a>
+                                <a href="eliminar_curso.php?id='. $curso_id .'"><button type="button" class="btn btn-danger">Eliminar</button></a></td>';
+                    }
+                ?>
                 </tbody>
             </table>
-        </div>
     </div>
     <!-- Include jQuery and Bootstrap JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

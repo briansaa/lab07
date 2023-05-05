@@ -51,9 +51,9 @@ desconectar($conexion);
                     echo '<td>' . $matricula_id . '</td>';
                     echo '<td>' . $alumno . '</td>';
                     echo '<td>' . $curso . '</td>';
-                    echo '<td><a href="editar_matricula.php?id='.$matricula_id.'" class="btn btn-info">Editar</a> <a href="eliminar_matricula.php?id='.$matricula_id.'" class="btn btn-danger">Eliminar</a></td>';
-                    echo '</tr>';
-                }
+                    echo '<td><a href="editar_matricula.php?id='. $matricula_id .'"><button type="button" class="btn btn-primary">Editar</button></a>
+                    <a href="eliminar_matricula.php?id='. $matricula_id .'"><button type="button" class="btn btn-danger">Eliminar</button></a></td>';
+        }
             ?>
             </tbody>
         </table>

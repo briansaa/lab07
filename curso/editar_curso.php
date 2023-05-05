@@ -62,6 +62,9 @@ desconectar($conexion);
                 <label for="nombre_curso">Nombre del curso:</label>
                 <input type="text" class="form-control" id="nombre_curso" name="nombre_curso" value="<?php echo $curso['nombre_curso']; ?>">
             </div>
+
+
+            
             <div class="form-group">
                 <label for="creditos">Créditos:</label>
                 <input type="number" class="form-control" id="creditos" name="creditos" value="<?php echo $curso['creditos']; ?>">

@@ -58,8 +58,8 @@ desconectar($conexion);
                         echo '<td>' . $nombres . '</td>';
                         echo '<td>' . $ape_paterno . '</td>';
                         echo '<td>' . $ape_materno . '</td>';
-                        echo '<td><a class="btn btn-success" href="editar_registro.php?id='.$alumno_id.'">Editar</a><a class="btn btn-danger" href="eliminar_alumno.php">Eliminar</a></td>';
-                        echo '</tr>';
+                        echo '<td><a href="editar_alumno.php?id='. $alumno_id .'"><button type="button" class="btn btn-primary">Editar</button></a>
+                            <a href="eliminar_alumno.php?id='. $alumno_id .'"><button type="button" class="btn btn-danger">Eliminar</button></a></td>';
                     }
                 ?>
                 </tbody>
